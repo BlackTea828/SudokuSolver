@@ -148,9 +148,9 @@ class SudokuSolver:
                     self.entries[i][j].insert(0, solution[i][j])
             if a%10==1:
                 messagebox.showinfo("Solution",f"This is the {1+10*(a//10)}st solution among {len(self.solutions)} solutions found.")
-            if a%10==2:
+            elif a%10==2:
                 messagebox.showinfo("Solution",f"This is the {2+10*(a//10)}nd solution among {len(self.solutions)} solutions found.")
-            if a%10==3:
+            elif a%10==3:
                 messagebox.showinfo("Solution",f"This is the {3+10*(a//10)}rd solution among {len(self.solutions)} solutions found.")
             else:
                 messagebox.showinfo("Solution",f"This is the {a+10*(a//10)}th solution among {len(self.solutions)} solutions found.")
